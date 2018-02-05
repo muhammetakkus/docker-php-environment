@@ -1,4 +1,4 @@
-./www/vendor
-./notes
-./mysql
-./postgres
+www/vendor
+notes
+mysql
+postgres
