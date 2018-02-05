@@ -1,0 +1,10 @@
+- phpmyadmin'e girişte username mysql environment'ta belirtildiği gibi mehmetakkus 
+  şifre mysql_password olarak belirtilen #Mhmmt28 mysql_root_password ne bilmiyorum.
+  ayrıca host olarak mysql service ismi olan ' mysql ' belirttiğimiz için panel girişinde
+  belirtmeye gerek kalmadı sanırım.
+- pgadmin4 panele giriş için default mail:pgadmin4@pgadmin.org pass:admin
+  ardından paneli kurmak için servers->create->server ve connection kısmından host'a docker-compose.yml'daki postgres servis name
+  port olarakta postgres portu olan 5432'i ver + username pass gir ve kur
+- adminer panele girişte system seçerken mysql-postgresql hangisine bağlanacaksan seç
+  server olarak docker-compose.yml dosyandaki database service name'i yaz. username ve password olarak 
+  database service name'de environments olarak geçtiğin username password ile giriş yap
