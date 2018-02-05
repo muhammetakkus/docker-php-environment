@@ -13,7 +13,7 @@ services:
         image: php:7.2-fpm
         volumes:
                 - ./www:/var/www/html
-        # command: bash -c "apt-get update && apt-get install"
+        #command: bash -c "apt-get update && apt-get install php7.2-pgsql"
         ports:
           - 9000:9000
     postgres:
@@ -33,7 +33,7 @@ services:
           - MYSQL_ROOT_PASSWORD=root
           - MYSQL_USER=mehmetakkus
           - MYSQL_PASSWORD=123123
-        port:
+        ports:
           - 3305:3306
     pgadmin:
         image: fenglc/pgadmin4
