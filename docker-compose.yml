@@ -10,12 +10,15 @@ services:
          links:
           - php
     php:
-        image: php:7.2-fpm
+        build:
+            context: ./etc
         volumes:
                 - ./www:/var/www/html
-        #command: bash -c "apt-get update && apt-get install php7.2-pgsql"
         ports:
           - 9000:9000
+    redis:
+        image: redis:alpine
+        ports: 6379:6379
     postgres:
         image: postgres
         volumes:
